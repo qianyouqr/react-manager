@@ -10,7 +10,7 @@ import path from 'path'
 */
 export default defineConfig({
     //构建后的项目中，所有资源的 URL 都会以 /react-manager/ 开头
-    // base: '/root/html/react-manager/dist/',  
+    // base: '/usr/share/nginx/html/',  
 	server: {
     host: '0.0.0.0',
     port: 8188,
