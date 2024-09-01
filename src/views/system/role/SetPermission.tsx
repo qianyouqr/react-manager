@@ -28,6 +28,7 @@ export default function SetPermission(props: IModalProp<Role.RoleItem>) {
       open
     }
   })
+  //@ts-ignore
   const open = (type: IAction, data?: Role.RoleItem) => {
     setVisible(true)
     setRoleInfo(data)

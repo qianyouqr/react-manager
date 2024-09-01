@@ -10,7 +10,7 @@ import path from 'path'
 */
 export default defineConfig({
 	server: {
-    host: 'localhost',
+    host: '0.0.0.0',
     port: 8188,
     proxy: {
       '/api': 'http://www.rqaaa.top/lb'
