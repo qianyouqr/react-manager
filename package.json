@@ -8,7 +8,7 @@
     "build:stg": "tsc -b && vite build --mode stag",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --port 4174"
   },
   "dependencies": {
     "@ant-design/icons": "^5.4.0",

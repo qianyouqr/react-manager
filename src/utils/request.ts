@@ -13,6 +13,7 @@ import { showLoading, hideLoading } from './loading'
 const instance = axios.create({
 	// 下面的请求拦截器 设置了，多余
 	// baseURL: import.meta.env.VITE_BASE_API,
+    baseURL: '/lb',
 	timeout: 8000,
 	timeoutErrorMessage: '请求超时，请稍后',
 	withCredentials: true

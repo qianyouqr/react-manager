@@ -28,6 +28,8 @@ export default function SetPermission(props: IModalProp<Role.RoleItem>) {
       open
     }
   })
+  /* eslint-disable no-unused-vars */
+  // @ts-ignore
   const open = (type: IAction, data?: Role.RoleItem) => {
     setVisible(true)
     setRoleInfo(data)
