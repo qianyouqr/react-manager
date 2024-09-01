@@ -16,14 +16,12 @@ const config = {
 	},
 	stg: {
     baseApi: '/api',
-    uploadApi: 'http://api-driver-stg.marsview.cc',
     cdn: 'http://xxx.aliyun.com',
     mock: false,
     mockApi: 'https://www.fastmock.site/mock/9ccae4db1aa96b02e4bfd71975773247/api'
   },
   prd: {
     baseApi: '/api',
-    uploadApi: 'http://api-driver.marsview.cc',
     cdn: 'http://xxx.aliyun.com',
     mock: false,
     mockApi: 'https://www.fastmock.site/mock/9ccae4db1aa96b02e4bfd71975773247/api'
