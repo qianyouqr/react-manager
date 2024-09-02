@@ -13,7 +13,7 @@ import { showLoading, hideLoading } from './loading'
 const instance = axios.create({
 	// 下面的请求拦截器 设置了，多余
 	// baseURL: import.meta.env.VITE_BASE_API,
-    baseURL: '/lb',
+    // baseURL: '/lb',
 	timeout: 8000,
 	timeoutErrorMessage: '请求超时，请稍后',
 	withCredentials: true
@@ -48,9 +48,11 @@ instance.interceptors.response.use(
 		hideLoading()
 		if (response.config.responseType === 'blob') return response
 		if (data.code === 500001) {
+			console.log('500001:');
 			message.error(data.msg)
 			storage.remove('token')
 			// 重回 登录页面 之前的页面
+			console.log("location.href: ",'/login?callback=' + encodeURIComponent(location.href));
 			location.href = '/login?callback=' + encodeURIComponent(location.href)
 		} else if (data.code != 0) {
 			if (response.config.showError === false) {
