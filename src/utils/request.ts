@@ -47,8 +47,7 @@ instance.interceptors.response.use(
 		const data: Result = response.data
 		hideLoading()
 		if (response.config.responseType === 'blob') return response
-		if (data.code === 500001) {
-			console.log('500001:');
+		if (data.code === 50001) {
 			message.error(data.msg)
 			storage.remove('token')
 			// 重回 登录页面 之前的页面

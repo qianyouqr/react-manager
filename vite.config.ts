@@ -12,8 +12,8 @@ export default defineConfig({
     //构建后的项目中，所有资源的 URL 都会以 /react-manager/ 开头
     // base: '/usr/share/nginx/html/',
 	server: {
-    host: '0.0.0.0',
-    port: 8188,
+    host: '127.0.0.1',
+    port: 8190,
     proxy: {
       '/api': 'http://www.rqaaa.top/lb'
     }
